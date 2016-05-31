@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Yummy LunchBox Spot</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+		</div>
+		<form action="index.html">
+			<input type="text" value="Search for our Food" id="search">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+				<li>
+						<a href="index.php">Home</a>
+					</li>
+					<li  class="current">
+						<a href="#">Menu</a>
+					</li>
+					
+					<li>
+						<a href="about.html">About us</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<!--<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="current">
+						<a href="recipes.html">A to Z Recipes</a>
+					</li>
+					<li>
+						<a href="featured.html">Featured Recipes</a>
+					</li>
+					<li>
+						<a href="videos.html">Videos</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>-->
+				</ul>
+			</div>
+			<script Language="JavaScript">
+<!--
+function Form1_Validator(theForm)
+{
+
+
+
+// require that at least one checkbox be checked
+//var checkSelected = false;
+//for (i = 1;  i < 10;  i++)
+//{
+//var checkboxname="food".concat(i);
+//if (theForm.checkboxname.checked)
+//checkSelected = true;
+//return (false);
+//}
+//if (!checkSelected)
+//{
+//alert("Please select at least one of the \"Food Item from the Menu\" options.");
+//return (false);
+//}
+
+
+
+// because this is a sample page, don't allow to exit to the post action
+// comes in handy when you are testing the form validations and don't
+// wish to exit the page
+   //window.location = 'order.php';
+  if(theForm.food1.checked || theForm.food2.checked || theForm.food3.checked || theForm.food4.checked || theForm.food5.checked || theForm.food6.checked ) {
+  return (true);
+  }else{
+  alert("Please select at least one of the \"Food Item from the Menu\" options.");
+  return(false);
+  }
+
+// replace the above with return(true); if you have a valid form to submit to
+}
+//--></script>
+
+<form action="order.php"
+method="POST" onsubmit="return Form1_Validator(this)" name="Form1">
+
+			<div class="body">
+				<div id="content">
+					<div><center><input type="submit" name="order" value="Order"></center>
+						<ul>
+							<li>
+								<a href="index.html"><img src="images/fried-chicken.jpg" alt="Image"></a>
+								<div>
+									<h3>
+									
+									<input type="checkbox" name="food1" value="Chicken DrumStick"><a href=>Chicken DrumStick</a></h3>
+<p>
+										The lower joint of the leg of a chicken and it is the special menu for all the consumer.Made from complete local chicken its good in taste and so much healthy while eating. we have cooked it in olive oil.
+									<br><input type="button" value="Nrs 250/-">
+									</p>
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images/momo.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food2" value="MoMo"><a href=>MoMo</a></h3>
+									
+										<p>
+											These Bundles of joy are best served hot and will surely make you come back for more, and then some more! Momo is a type of steamed bun with some form of filling. The filling are chicken, buff and vegetables.
+										<br><input type="button" value="Nrs 95/-">
+										</p>
+										
+									
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images/pizza.jpg" alt="Image" width="160" height="150" ></a>
+								<div>
+									<h3><input type="checkbox" name="food3" value="Pizza"><a href=>Pizza</a></h3>
+									<p>
+										Right in time to destroy your New Year's resolution and waistline.But of course, not your budget! Excellent quality pizzas made from fresh ingredients! Add toppings to an existing pizza or create your own from scratch. You can ask the very helpful staff for their recommendations on what to add to give you pizza that extra flavour. 
+									<br><input type="button" value="Nrs 210/-">
+									</p>
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images/cb.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food4" value="Chicken Biryani"><a href=>Chicken Biryani</a></h3>
+									
+										<p>
+											This is a mixed rice dish from the Indian subcontinent. It is made with spices, rice and meat or vegetables. A biryani is a rice dish that's popular in India and Pakistan and usually features a mix of rice, herbs, and spices as well as some type of vegetables or meat. 
+										<br><input type="button" value="Nrs 250/-">
+										</p>
+										
+									
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images/punjabi-samosa.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food5" value="Samosa"><a href=>Samosa</a></h3>
+									<p>
+										The samosa contains Wheat flour or maida flour shell stuffed with some filling, generally a mixture of mashed boiled potato, onions, green peas, spices and green chili. The entire pastry is then deep-fried to a golden brown color, in vegetable oil.
+										<br><input type="button" value="Nrs 50/-">
+									</p>
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images/kathiroll.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food6" value="Kathi Roll"><a href=>Kathi Roll</a></h3>
+									<p>
+										 Traditionally, a kati roll is a kati kebab wrapped in a layered paratha bread. Paratha is dough that is kneaded into a rope, then coiled into a round patty. It is then flattened with a rolling pin and partially fried in oil on a tawa (griddle).
+										<br><input type="button" value="Nrs 65/-">
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+		<!-- <div>
+			<div>
+				<h3>Cooking Video</h3>
+				<a href="videos.html"><img src="images/cooking-video.png" alt="Image"></a>
+				<span>Vegetable &amp; Rice Topping</span>
+			</div>
+			<div>
+				<h3>Featured Recipes</h3>
+				<ul id="featured">
+					<li>
+						<a href="recipes.html"><img src="images/sandwich.jpg" alt="Image"></a>
+						<div>
+							<h2><a href="recipes.html">Ham Sandwich</a></h2>
+							<span>by: Anna</span>
+						</div>
+					</li>
+					<li>
+						<a href="recipes.html"><img src="images/biscuit-and-coffee.jpg" alt="Image"></a>
+						<div>
+							<h2><a href="recipes.html">Biscuit &amp; Sandwich</a></h2>
+							<span>by: Sarah</span>
+						</div>
+					</li>
+					<li>
+						<a href="recipes.html"><img src="images/pizza.jpg" alt="Image"></a>
+						<div>
+							<h2><a href="recipes.html">Delicious Pizza</a></h2>
+							<span>by: Rico</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Blog</h3>
+				<ul id="blog">
+					<li>
+						<a href="blog.html">This is just a place holder, so you can see what the site would look like.</a>
+						<span class="date">Jan 9, by Liza</span>
+					</li>
+					<li>
+						<a href="blog.html">This is just a place holder, so you can see what the site would look like.</a>
+						<span class="date">Feb 16, by Myk</span>
+					</li>
+					<li>
+						<a href="blog.html">This is just a place holder, so you can see what the site would look like.</a>
+						<span class="date">March 15, by Xaxan</span>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Get Updates</h3>
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+				<a href="http://freewebsitetemplates.com/go/youtube/" target="_blank" id="youtube">Youtube</a>
+				<a href="http://freewebsitetemplates.com/go/flickr/" target="_blank" id="flickr">Flickr</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2012. All rights reserved
+			</p>
+		</div>
+	</div> -->
+	
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Yummy LunchBox Spot</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+			<script Language="JavaScript">
+<!--
+function Form1_Validator(theForm)
+{
+
+
+
+// require that at least one checkbox be checked
+//var checkSelected = false;
+//for (i = 1;  i < 10;  i++)
+//{
+//var checkboxname="food".concat(i);
+//if (theForm.checkboxname.checked)
+//checkSelected = true;
+//return (false);
+//}
+//if (!checkSelected)
+//{
+//alert("Please select at least one of the \"Food Item from the Menu\" options.");
+//return (false);
+//}
+
+
+
+// because this is a sample page, don't allow to exit to the post action
+// comes in handy when you are testing the form validations and don't
+// wish to exit the page
+   //window.location = 'order.php';
+  if(theForm.food1.checked || theForm.food2.checked || theForm.food3.checked || theForm.food4.checked) {
+  return (true);
+  }else{
+  alert("Please select at least one of the \"Food Item from the Menu\" options.");
+  return(false);
+  }
+
+// replace the above with return(true); if you have a valid form to submit to
+}
+//--></script>
+
+<body>
+	<div class="header">
+		<div>
+			<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+		</div>
+		<form action="index.html">
+			<input type="text" value="Search for our Food" id="search">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+				<li>
+						<a href="index.php">Home</a>
+					</li>
+					<li  class="current">
+						<a href="#">Menu</a>
+					</li>
+					
+					<li>
+						<a href="about.html">About us</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<!--<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="current">
+						<a href="recipes.html">A to Z Recipes</a>
+					</li>
+					<li>
+						<a href="featured.html">Featured Recipes</a>
+					</li>
+					<li>
+						<a href="videos.html">Videos</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>-->
+				</ul>
+			</div>
+			<form action="order.php"
+method="POST" onsubmit="return Form1_Validator(this)" name="Form1">
+			<div class="body">
+				<div id="content">
+					<div><center><input type="submit" name="order" value="Order"></center>
+					
+						<ul>
+						
+							<li>
+								<a href="index.html"><img src="images/gs.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food1" value="Grill Salmon Pineapple"><a href=>Grill Salmon Pineapple</a></h3>
+									 
+									<p>
+
+
+									Fish is always a good choice, because it’s rich in heart-healthy omega-3 fatty acids.  A leafy salad like our Pike Place Market Salad will give you another dose of soluble fiber. And having a glass of wine may actually be good for your heart; research suggests it may cause a slight increase in HDL, the good cholesterol.
+									
+									
+									<br><input type="button" value="Nrs 200/-">
+									
+									
+									</p>
+									
+									
+										
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images\oatmealheart.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food2" value="Oatmeal Heart"><a href=>Oatmeal Heart</a></h3>
+										<p>
+											 
+
+											 This square meal will keep you feeling full and alert until your lunch break, yet it barely puts a dent in your saturated fat quota and contains 0 grams of dietary cholesterol.
+									
+											  <br><input type="button" value="Nrs 105/-">
+										
+										
+										</p>	
+
+										
+									</div>
+								
+							</li>
+							<li>
+								<a href="index.html"><img src="images\baby-carrots-popcorn-400.jpg" alt="Image"  width="160" height="150"></a>></a>
+								<div>
+									<h3><input type="checkbox" name="food3" value="Baby Carrot and Popcorn"><a href=>Baby Carrot and Popcorn</a></h3>
+									<p>
+										Snacking between meals is a notorious diet-buster. The midafternoon energy dip that ordinarily sends you to the vending machine is when you’re likely to feel it the most. Bring a handful of baby carrots or a sandwich bag full of low-fat popcorn—but not both.
+
+                                       	  <br><input type="button" value="Nrs 95/-">
+
+									</p>
+								</div>
+							</li>
+							<li>
+								<a href="index.html"><img src="images\tuna.jpg" alt="Image" width="160" height="150"></a>
+								<div>
+									<h3><input type="checkbox" name="food4" value="Tuna Sickness"><a href=>Tuna Sickness</a></h3>
+									
+										<p>
+											
+                                        This hearty brown-bag lunch will only set you back about 500 calories, and it contains just 7.5 grams of fat. (For an even healthier sandwich, skip the light mayo: It accounts for about two-thirds of the fat.)
+
+										 <br><input type="button" value="Nrs 175/-">
+										</p>
+
+									
+				</div>
+			
+			
+			
+				
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	</form>
+	<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2012. All rights reserved
+			</p>
+		</div>
+	</div>
+	
+</body>
+</html>
